@@ -10,13 +10,17 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private langService: LanguageService) {
+  languages: Language[];
+
+  constructor(private langService: LanguageService, private translate: TranslateService) {
+    langService.getLanguages().subscribe( (langs) => this.languages = langs );
   }
 
   ngOnInit() {
   }
 
-  getLanguages() {
-    return this.langService.getLanguages();
+  onLanguageChanged(lang: string) {
+    console.log(lang);
+    this.translate.use(lang);
   }
 }

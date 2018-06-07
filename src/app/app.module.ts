@@ -39,11 +39,13 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
 export class AppModule {
   constructor(private translate: TranslateService, private language: LanguageService) {
     const strLangs = [];
-    let defaultLanguage = '';
+    let defaultLanguage = 'en';
     language.getLanguages().forEach( (langs) => {
       langs.forEach( (lang) => {
-        strLangs.push(lang);
-        defaultLanguage = lang.default ? lang.name : 'en';
+        strLangs.push(lang.value);
+        if ( lang.default ) {
+          defaultLanguage = lang.value;
+        }
         });
         translate.addLangs(strLangs);
         translate.setDefaultLang(defaultLanguage);

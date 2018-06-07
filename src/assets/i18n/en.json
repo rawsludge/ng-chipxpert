@@ -1,5 +1,7 @@
 {
     "LANGUAGE": "English",
     "USER_NAME":  "User name",
-    "PASSWORD": "Password"
+    "PASSWORD": "Password",
+    "LANGUAGE": "Language",
+    "LOGIN": "Login"
 }

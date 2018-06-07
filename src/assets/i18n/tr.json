@@ -1,5 +1,7 @@
 {
     "LANGUAGE": "Türkçe",
     "USER_NAME":  "Kullanıcı adı",
-    "PASSWORD": "Şifre"
+    "PASSWORD": "Şifre",
+    "LANGUAGE": "Dil",
+    "LOGIN": "Giriş"
 }

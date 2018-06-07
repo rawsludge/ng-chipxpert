@@ -1,4 +1,4 @@
 [
-    { "name": "tr", "value": "Türkçe", "default": "true" },
-    { "name": "en", "value": "English", "default": "false" }
+    { "name": "Türkçe", "value": "tr", "default": false },
+    { "name": "English", "value": "en", "default": true }
 ]
